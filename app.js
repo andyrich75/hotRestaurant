@@ -16,5 +16,13 @@ app.get("/reserve", function (req, res) {
     res.sendFile(path.join(__dirname, "front", "reserve.html"));
 });
 
+app.get("/home", function (req, res) {
+    res.sendFile(path.join(__dirname, "front", "index.html"));
+});
+
+app.get("/tables", function (req, res) {
+    res.sendFile(path.join(__dirname, "front", "tables.html"));
+});
+
 
 
